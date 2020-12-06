@@ -1,5 +1,5 @@
 # RULE-SET,https://raw.githubusercontent.com/NobyDa/ND-AD/master/Surge/AD_Block_Add.txt,REJECT
-
+# 阻止广告联盟关键字和IP段
 # Update time : 2020.5.1 1847
 
 DOMAIN-KEYWORD,cnzz
