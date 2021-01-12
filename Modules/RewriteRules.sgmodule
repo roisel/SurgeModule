@@ -286,7 +286,7 @@
 ^https?:\/\/aweme.snssdk.com\/aweme\/v1\/aweme\/stats\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/activity\/carrier_flow\/ - reject 
 ^https?:\/\/.+\.snssdk\.com\/check_version\/v6\/ - reject
-^https?:\/\/.+\.snssdk\.com\/search\/suggest\/ - reject
+^https?:\/\/(.*)\.snssdk\.com\/search\/suggest\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/api\/suggest_words\/ - reject
 ^https?:\/\/.+?\.(snssdk|amemv)\.com\/api\/ad\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/user\/profile\/bind_check\/ - reject
