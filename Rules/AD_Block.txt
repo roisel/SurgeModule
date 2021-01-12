@@ -6351,6 +6351,7 @@
 .sdkapp.mobile.sina.cn
 .sdkapp.uve.weibo.com
 .sdkclick.mobile.sina.cn
+.sdkclick.uve.weibo.com
 .sdkconfig.ad.intl.xiaomi.com
 .sdkdm.com
 .sdklog.cmgame.com
