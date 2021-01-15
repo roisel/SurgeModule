@@ -1,6 +1,3 @@
-# > Beplay
-DOMAIN-KEYWORD,beplay
-
 # > Blizzard
 USER-AGENT,hearthstone*
 DOMAIN,cdp.cloud.unity3d.com
@@ -9,7 +6,6 @@ DOMAIN-SUFFIX,battlenet.com
 DOMAIN-SUFFIX,blizzard.com
 
 # > Prior
-DOMAIN,client.amplifi.com
 DOMAIN,ip.bjango.com
 DOMAIN-SUFFIX,alphassl.com
 DOMAIN-SUFFIX,edu.cn
@@ -21,21 +17,10 @@ DOMAIN-SUFFIX,zmzfile.com
 # > Sony PSX
 USER-AGENT,RemotePlay*
 
-# > TeamViewer
-IP-CIDR,185.188.32.0/24,no-resolve
-IP-CIDR,185.188.33.0/24,no-resolve
-IP-CIDR,185.188.34.0/24,no-resolve
-IP-CIDR,185.188.35.0/24,no-resolve
-IP-CIDR6,2a0b:b580::/48,no-resolve
-IP-CIDR6,2a0b:b581::/48,no-resolve
-IP-CIDR6,2a0b:b582::/48,no-resolve
-IP-CIDR6,2a0b:b583::/48,no-resolve
-
 # > Tencent
 IP-CIDR,182.254.116.0/24,no-resolve
 
 DOMAIN-SUFFIX,12306.cn
-DOMAIN-SUFFIX,12306.com
 DOMAIN-SUFFIX,126.net
 DOMAIN-SUFFIX,163.com
 DOMAIN-SUFFIX,360.cn
@@ -64,7 +49,6 @@ DOMAIN-SUFFIX,api.crisp.chat
 DOMAIN-SUFFIX,appshike.com
 DOMAIN-SUFFIX,appstore.com
 DOMAIN-SUFFIX,autonavi.com
-DOMAIN-SUFFIX,aweme.snssdk.com
 DOMAIN-SUFFIX,bababian.com
 DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,baidupcs.com
