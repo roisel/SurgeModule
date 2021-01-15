@@ -98,7 +98,7 @@
 ^https?:\/\/.+\/vlive.qqvideo.tc.qq.com\/ - reject
 ^https?:\/\/3gimg.qq.com\/tencentMapTouch\/app\/activity\/ - reject
 ^https?:\/\/api5.futunn.com\/ad\/ - reject
-^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+?\.png - rejec
+^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+?\.png - reject
 ^https?:\/\/imgcache.qq.com\/qqlive\/ - reject
 ^https?:\/\/lives.l.qq.com\/livemsg\?sdtfrom= - reject
 ^https?:\/\/mmgr.gtimg.com\/gjsmall\/qiantu\/upload\/ - reject
@@ -155,7 +155,7 @@
 ^https?:\/\/oimage([a-z])([0-9]).ydstatic.com\/.+?&product=adpublish - reject
 ^https?:\/\/p[4](c)?.music.126.net\/\w+==\/10995\d{13}.jpg$ - reject
 ^https?:\/\/sp.kaola.com\/api\/openad - reject
-^https?:\/\/support.you.163.com\/xhr\/boot\/getBootMedia.json - 
+^https?:\/\/support.you.163.com\/xhr\/boot\/getBootMedia.json - reject
 ^https?:\/\/oimage\w\d\.ydstatic\.com\/image\?.+?=adpublish - reject
 ^https?:\/\/api.zhihu.com\/ab\/api - reject
 ^https?:\/\/api.zhihu.com\/ad-style-service - reject
@@ -223,8 +223,8 @@
 ^https?:\/\/c.tieba.baidu.com\/c\/s\/splashSchedule - reject
 ^https?:\/\/cover.baidu.com\/cover\/page\/dspSwitchAds\/ - reject
 ^https?:\/\/c.tieba.baidu.com\/\w+\/\w+\/(sync|newRnSync|newlog|mlog) - reject
-^https?:\/\/c.tieba.baidu.com\/c\/p\/img\?src= - reject
-^https?:\/\/c.tieba.baidu.com\/c\/s\/logtogether\?cmd= - reject
+^https?:\/\/c.tieba.baidu.com\/c\/p\/img\?src - reject
+^https?:\/\/c.tieba.baidu.com\/c\/s\/logtogether\?cmd - reject
 ^https?:\/\/ad.api.moji.com\/ad\/log\/stat - reject
 ^https?:\/\/ast.api.moji.com\/assist\/ad\/moji\/stat - reject
 ^https?:\/\/cdn.moji.com\/adlink\/avatarcard - reject
@@ -246,7 +246,7 @@
 ^https?:\/\/res.mall.10010.cn\/mall\/common\/js\/fa.js?referer= - reject
 ^https?:\/\/api.newad.ifeng.com\/ClientAdversApi1508\?adids= - reject
 ^https?:\/\/c1.ifengimg.com\/.+_w1080_h1410.jpg - reject
-^https?:\/\/exp.3g.ifeng.com\/coverAdversApi\?gv=. - reject
+^https?:\/\/exp.3g.ifeng.com\/coverAdversApi\?gv= - reject
 ^https?:\/\/ifengad.3g.ifeng.com\/ad\/pv.php\?stat= - reject
 ^https?:\/\/iis1.deliver.ifeng.com\/getmcode\?adid= - reject
 ^https?:\/\/gw.alicdn.com\/tfs\/.+-1125-1602 - reject

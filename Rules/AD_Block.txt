@@ -5,7 +5,8 @@
 # Update time : 2020.10.3
 
 # AdRule
-.lf9-geckocdn-tos.pstatp.com
+.tsearch-hl.snssdk.com
+.mon.toutiao.com
 .mcupdate.gstarcad.com
 .adx.open-adx.com
 .adservice.sigmob.cn
@@ -6843,7 +6844,6 @@
 .teen.77rog.com
 .telstra.imrworldwide.com
 .temai.snssdk.com
-.tsearch-hl.snssdk.com
 .temai.taobao.com
 .temp.163.com
 .tencentmind.com
