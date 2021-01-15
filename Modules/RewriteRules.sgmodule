@@ -495,11 +495,26 @@ http?:\/\/123.59.30.10\/adv\/advInfos - reject
 ^https?:\/\/.+\.pglstatp.com\/ - reject
 ^https?:\/\/adsmind.ugdtimg.com\/ - reject
 ^https?:\/\/mi.gdt.qq.com\/ - reject
+
+# > 抖音
+^https?:\/\/.+.pstatp.com\/img\/ad - reject
+^https?:\/\/.+.snssdk.com\/api\/ad\/ - reject
+^https?:\/\/aweme.snssdk.com\/aweme\/v1\/aweme\/stats\/ - reject
+^https?:\/\/aweme.snssdk.com\/aweme\/v1\/device\/update\/ - reject
+^https?:\/\/aweme.snssdk.com\/aweme\/v1\/screen\/ad\/ - reject
+^https?:\/\/aweme.snssdk.com\/service\/1\/app_logout\/ - reject
+^https?:\/\/aweme.snssdk.com\/service\/2\/app_log - reject
+^https?:\/\/frontier.snssdk.com\/ - reject
+^https?:\/\/sf\w-ttcdn-tos.pstatp.com\/obj\/web.business.image - reject
+
+# > 头条
+^https?:\/\/p\d.pstatp.com\/origin - reject
+^https?:\/\/pb\d.pstatp.com\/origin - reject
+
 ^https:\/\/.+\.snssdk.com\/v2\/ - reject
 ^https:\/\/.+\.snssdk.com\/meteor.js\/ - reject
 ^https:\/\/.+\.snssdk.com\/2\/wap\/landing_tertris_log\/ - reject
-^https?:\/\/.+.snssdk.com\/api\/ad\/ - reject
-^https?:\/\/frontier.snssdk.com\/ - reject
+
 ^https?:\/\/aweme-eagle(.*)\.snssdk\.com\/aweme\/v2\/ https:\/\/aweme-eagle$1.snssdk.com\/aweme\/v1\/ 302
 ^https://(.*)\.snssdk\.com/aweme/v2/ https://$1.snssdk.com/aweme/v1/ 302
 ^https?:\/\/aweme.snssdk.com\/aweme\/v1\/aweme\/stats\/ - reject  
@@ -513,21 +528,13 @@ http?:\/\/123.59.30.10\/adv\/advInfos - reject
 ^https?:\/\/.+?\.(snssdk|amemv)\.com\/api\/ad\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/user\/profile\/bind_check\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/toutiao\/bind_mobile_config\/ - reject  
-^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/ - reject
-^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/ - reject
-^https?:\/\/aweme\.snssdk\.com\/service\/1\/app_logout\/ - reject
-^https?:\/\/aweme\.snssdk\.com\/service\/2\/app_log - reject
-^https?:\/\/frontier\.snssdk\.com\/ - reject
-^https?:\/\/sf\d-ttcdn-tos.pstatp.com\/ - reject
-^https?:\/\/sf\d-scmcdn-tos.pstatp.com\/ - reject
-^https?:\/\/p\d.pstatp.com\/origin - reject
-^https?:\/\/pb\d.pstatp.com\/origin - reject
+
 ^https?:\/\/.+\.pstatp\.com\/img\/mosaic-legacy\/ - reject
 ^https?:\/\/.+\.pstatp\.com\/obj\/web\.business\.image\/ - reject
 ^https?:\/\/.+\.pstatp\.com\/img\/web\.business\.image\/ - reject
 ^https?:\/\/.+\.pstatp\.com\/toutiao\/feoffine\/learing_core\/ - reject
 ^https?:\/\/s3.pstatp.com\/inapp\/TTAdblock.css - reject
-^https?:\/\/.+?\.pstatp\.com\/img\/ad - reject
+
 ^https?:\/\/sf\d{1}-ttcdn-tos.pstatp.com\/obj\/web.business.image - reject
 
 ^https?:\/\/qzs.qq.com\/ - reject
