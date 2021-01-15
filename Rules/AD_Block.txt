@@ -5,6 +5,7 @@
 # Update time : 2020.10.3
 
 # AdRule
+.lf9-geckocdn-tos.pstatp.com
 .mcupdate.gstarcad.com
 .adx.open-adx.com
 .adservice.sigmob.cn
