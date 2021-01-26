@@ -4,30 +4,7 @@
 
 [Script]
 # 定时脚本
+获取互助码 = type=cron,cronexp=20 13 * * 6,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_get_share_code.js
 
-# 叮咚买菜
-# 打开 APP, 访问下`我的`>`积分`
-叮咚买菜 = type=cron,cronexp=55 2 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.js,script-update-interval=0
-
-# > 饿了么   (By @syzzzf)
-# 打开 APP, 访问下`我的`>`签到领红包`(左上角)
-饿了么 = type=cron,cronexp=35 4 0 * * *,script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,script-update-interval=0
-饿了么-打卡领红包= type=cron,cronexp=35 4 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js
-
-# > 携程旅行  (By @barrymchen)
-# 打开App 点击”我的“,然后点击”我的积分“,再点击下面的”签到.任务“即可
-携程旅行 = type=cron,cronexp=45 4 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ctrip.js,script-update-interval=0
-
-# > 滴滴出行 (By @zZPiglet)
-# 进入"滴滴出行"，若弹出"首次写入滴滴出行 Token 成功"
-滴滴出行 = type=cron,cronexp=0 6 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
-滴滴出行 = type=cron,cronexp=0 59 23 * * *,script-path=script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_reward.js
-
-cron "10 0 * * *" script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_shop.js,timeout=30, tag=进店领豆
-cron "1 1 * * *" script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_redPacket.js, tag=京东全民开红包
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_baiTiao.js, tag=京东白条
-
-
-# > 叮咚农场养鱼(By iepngs)
-# 叮咚买菜App - 右下角"我的"- 叮咚农场
-叮咚农场养鱼=type=cron,cronexp="1 8,12,17 * * *",script-path=https://raw.githubusercontent.com/iepngs/Script/master/dingdong/index.js,wake-system=true,timeout=600
+[MITM]
+hostname = %APPEND% api.m.jd.com, bean.m.jd.com, wqsd.jd.com, home.m.jd.com, wq.jd.com, crazy-joy.jd.com, h5.m.jd.com
