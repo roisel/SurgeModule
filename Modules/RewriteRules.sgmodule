@@ -290,6 +290,7 @@
 ^https?:\/\/mapi.dangdang.com\/index.php\?action=init&user_client=iphone - reject
 
 # > 抖音
+^https?:\/\/.+\.amemv.com\/api\/ad\/ - reject
 ^https?:\/\/aweme.snssdk.com\/aweme\/v1\/aweme\/stats\/ - reject
 ^https?:\/\/aweme.snssdk.com\/aweme\/v1\/device\/update\/ - reject
 ^https?:\/\/aweme.snssdk.com\/aweme\/v1\/screen\/ad\/ - reject
@@ -297,8 +298,6 @@
 ^https?:\/\/aweme.snssdk.com\/service\/2\/app_log - reject
 ^https?:\/\/frontier.snssdk.com\/ - reject
 ^https?:\/\/sf\w-ttcdn-tos.pstatp.com\/obj\/web.business.image\/ - reject
-^https?:\/\/.+\.amemv.com\/api\/ad\/ - reject
-
 
 # > 快递100
 ^https?:\/\/qzonestyle.gtimg.cn\/qzone\/biz\/gdt\/mob\/sdk\/ios\/v2\/ - reject
