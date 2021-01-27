@@ -297,7 +297,7 @@
 ^https?:\/\/aweme.snssdk.com\/service\/2\/app_log - reject
 ^https?:\/\/frontier.snssdk.com\/ - reject
 ^https?:\/\/sf\w-ttcdn-tos.pstatp.com\/obj\/web.business.image\/ - reject
-^https?:\/\/.+\.awemv.com\/api\/ad\/ - reject
+^https?:\/\/.+\.amemv.com\/api\/ad\/ - reject
 
 
 # > 快递100
