@@ -239,10 +239,10 @@
 ^https?:\/\/pb\d.pstatp.com\/origin - reject
 ^https?:\/\/.+\.pstatp\.com\/img\/mosaic-legacy\/ - reject
 ^https?:\/\/.+\.pstatp\.com\/toutiao\/feoffine\/learing_core\/ - reject
-^https?:\/\/.+.pstatp.com\/img\/ad - reject
+^https?:\/\/.+\.pstatp.com\/img\/ad - reject
 ^https?:\/\/.+\.pstatp\.com\/obj\/web\.business\.image\/ - reject
 ^https?:\/\/.+\.pstatp\.com\/img\/web\.business\.image\/ - reject
-^https?:\/\/.+.snssdk.com\/api\/ad\/ - reject
+^https?:\/\/.+\.snssdk.com\/api\/ad\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/activity\/carrier_flow\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/check_version\/ - reject
@@ -290,8 +290,6 @@
 ^https?:\/\/mapi.dangdang.com\/index.php\?action=init&user_client=iphone - reject
 
 # > 抖音
-^https?:\/\/.+.pstatp.com\/img\/ad - reject
-^https?:\/\/.+.snssdk.com\/api\/ad\/ - reject
 ^https?:\/\/aweme.snssdk.com\/aweme\/v1\/aweme\/stats\/ - reject
 ^https?:\/\/aweme.snssdk.com\/aweme\/v1\/device\/update\/ - reject
 ^https?:\/\/aweme.snssdk.com\/aweme\/v1\/screen\/ad\/ - reject
@@ -299,7 +297,7 @@
 ^https?:\/\/aweme.snssdk.com\/service\/2\/app_log - reject
 ^https?:\/\/frontier.snssdk.com\/ - reject
 ^https?:\/\/sf\w-ttcdn-tos.pstatp.com\/obj\/web.business.image\/ - reject
-^https?:\/\/.+.awemv.com\/api\/ad\/ - reject
+^https?:\/\/.+\.awemv.com\/api\/ad\/ - reject
 
 
 # > 快递100
