@@ -298,7 +298,9 @@
 ^https?:\/\/aweme.snssdk.com\/service\/1\/app_logout\/ - reject
 ^https?:\/\/aweme.snssdk.com\/service\/2\/app_log - reject
 ^https?:\/\/frontier.snssdk.com\/ - reject
-^https?:\/\/sf\w-ttcdn-tos.pstatp.com\/obj\/web.business.image - reject
+^https?:\/\/sf\w-ttcdn-tos.pstatp.com\/obj\/web.business.image\/ - reject
+^https?:\/\/.+.awemv.com\/api\/ad\/ - reject
+
 
 # > 快递100
 ^https?:\/\/qzonestyle.gtimg.cn\/qzone\/biz\/gdt\/mob\/sdk\/ios\/v2\/ - reject
@@ -342,5 +344,5 @@
 ^https?:\/\/.+\.kingsoft-office-service\.com\/ad - reject
 
 [MITM]
-hostname = %APPEND% *.toutiaoapi.com, *.snssdk.com, *.pstatp.com, *.k.sohu.com, *.kfc.com, *.kingsoft-office-service.com, *.meituan.net, *.wikipedia.org, *.wikiwand.com, *.ydstatic.com, *.youdao.com, acs.m.taobao.com, act.vip.iqiyi.com, adproxy.autohome.com.cn, afd.baidu.com, api.feng.com, api.k.sohu.com, api.smzdm.com, api5.futunn.com, app2.autoimg.cn, appsdk.soku.com, c.m.163.com, capi.douyucdn.cn, cdn.kuaidi100.com,  client.mail.163.com, consumer.fcbox.com, creditcard.ecitic.com, dsp-impr2.youdao.com, *.dangdang.com, fuss10.elemecdn.com,gorgon.youdao.com, gw.alicdn.com, iface.iqiyi.com, iface2.iqiyi.com, img1.126.net, impservice.dictapp.youdao.com, interface.music.163.com, ios.wps.cn,   lives.l.qq.com, m*.amap.com, m.client.10010.com,m.creditcard.ecitic.com,  m5.amap.com, mi.gdt.qq.com, mimg.127.net, mp.weixin.qq.com, ms.jr.jd.com, newsso.map.qq.com, nex.163.com, p.kuaidi100.com, p1.music.126.net, pic.k.sohu.com, pic1cdn.cmbchina.com, r.inews.qq.com, render.alipay.com, resource.cmbchina.com, rtbapi.douyucdn.cn,  staticlive.douyucdn.cn, support.you.163.com,  ups.youku.com, wapwenku.baidu.com, wenku.baidu.com, zhidao.baidu.com
+hostname = %APPEND% *.amemv.com, *.toutiaoapi.com, *.snssdk.com, *.pstatp.com, *.k.sohu.com, *.kfc.com, *.kingsoft-office-service.com, *.meituan.net, *.wikipedia.org, *.wikiwand.com, *.ydstatic.com, *.youdao.com, acs.m.taobao.com, act.vip.iqiyi.com, adproxy.autohome.com.cn, afd.baidu.com, api.feng.com, api.k.sohu.com, api.smzdm.com, api5.futunn.com, app2.autoimg.cn, appsdk.soku.com, c.m.163.com, capi.douyucdn.cn, cdn.kuaidi100.com,  client.mail.163.com, consumer.fcbox.com, creditcard.ecitic.com, dsp-impr2.youdao.com, *.dangdang.com, fuss10.elemecdn.com,gorgon.youdao.com, gw.alicdn.com, iface.iqiyi.com, iface2.iqiyi.com, img1.126.net, impservice.dictapp.youdao.com, interface.music.163.com, ios.wps.cn,   lives.l.qq.com, m*.amap.com, m.client.10010.com,m.creditcard.ecitic.com,  m5.amap.com, mi.gdt.qq.com, mimg.127.net, mp.weixin.qq.com, ms.jr.jd.com, newsso.map.qq.com, nex.163.com, p.kuaidi100.com, p1.music.126.net, pic.k.sohu.com, pic1cdn.cmbchina.com, r.inews.qq.com, render.alipay.com, resource.cmbchina.com, rtbapi.douyucdn.cn,  staticlive.douyucdn.cn, support.you.163.com,  ups.youku.com, wapwenku.baidu.com, wenku.baidu.com, zhidao.baidu.com
 
