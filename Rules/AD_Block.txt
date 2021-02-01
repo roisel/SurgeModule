@@ -5,6 +5,11 @@
 # Update time : 2020.10.3
 
 # AdRule
+.chengzijianzhan.com
+.cg.oceanengine.com
+.ad.oceanengine.com
+.popup.oceanengine.com
+.adshow-test.bytedance.net
 .mon.toutiao.com
 .mcupdate.gstarcad.com
 .adx.open-adx.com
