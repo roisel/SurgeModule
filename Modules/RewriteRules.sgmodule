@@ -299,6 +299,9 @@
 ^https?:\/\/aweme.snssdk.com\/service\/2\/app_log - reject
 ^https?:\/\/frontier.snssdk.com\/ - reject
 ^https?:\/\/sf\w-ttcdn-tos.pstatp.com\/obj\/web.business.image\/ - reject
+^https?:\/\/sf\w-be-pack.pglstatp-toutiao.com\/obj\/ad-app-package\/ - reject
+^https?:\/\/s\w.pstatp.com\/bytecom\/resource\/track_log\/src\/toutiao-track-log.js - reject
+^https?:\/\/sf\w-scmcdn-tos.pstatp.com\/goofy\/ad\/ - reject
 
 # > douyin landing_tertris_log
 ^https?:\/\/api\w-normal-c-lf.amemv.com\/api\/apps\/ - reject
