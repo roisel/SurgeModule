@@ -300,6 +300,11 @@
 ^https?:\/\/frontier.snssdk.com\/ - reject
 ^https?:\/\/sf\w-ttcdn-tos.pstatp.com\/obj\/web.business.image\/ - reject
 
+# > douyin landing_tertris_log
+^https?:\/\/api\w-normal-c-lf.amemv.com\/api\/apps\/ - reject
+^https?:\/\/abtest-ch.snssdk.com\/common\?ecomterm_sdk_version - reject
+^https?:\/\/log\w-misc-lf.amemv.com\/service\/\d{1}\/app_log\/ - reject
+
 # > 快递100
 ^https?:\/\/qzonestyle.gtimg.cn\/qzone\/biz\/gdt\/mob\/sdk\/ios\/v2\/ - reject
 ^https?:\/\/cdn.kuaidi100.com\/images\/open\/appads - reject
