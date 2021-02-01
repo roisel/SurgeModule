@@ -304,11 +304,13 @@
 ^https?:\/\/api\w-normal-c-lf.amemv.com\/api\/apps\/ - reject
 ^https?:\/\/abtest-ch.snssdk.com\/common\?ecomterm_sdk_version - reject
 ^https?:\/\/log\w-misc-lf.amemv.com\/service\/\d{1}\/ - reject
+^https?:\/\/sf\w-scmcdn-tos.pstatp.com\/goofy\/aweme\/ - reject
 
 # > 快递100
 ^https?:\/\/qzonestyle.gtimg.cn\/qzone\/biz\/gdt\/mob\/sdk\/ios\/v2\/ - reject
 ^https?:\/\/cdn.kuaidi100.com\/images\/open\/appads - reject
 ^https?:\/\/p.kuaidi100.com\/mobile\/mainapi.do - reject
+
 
 # > 招商银行
 ^https?:\/\/pic1cdn.cmbchina.com\/appinitads\/ - reject
