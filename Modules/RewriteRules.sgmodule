@@ -300,7 +300,7 @@
 ^https?:\/\/frontier.snssdk.com\/ - reject
 ^https?:\/\/sf\w-ttcdn-tos.pstatp.com\/obj\/web.business.image\/ - reject
 ^https?:\/\/sf\w-be-pack.pglstatp-toutiao.com\/obj\/ad-app-package\/ - reject
-^https?:\/\/s\w.pstatp.com\/bytecom\ - reject
+^https?:\/\/s\w.pstatp.com\/bytecom\/ - reject
 ^https?:\/\/sf\w-scmcdn-tos.pstatp.com\/goofy\/ad\/ - reject
 
 # > douyin landing_tertris_log
