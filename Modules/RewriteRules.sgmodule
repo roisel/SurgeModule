@@ -8,12 +8,6 @@
 ^https?:\/\/(www.)?google\.cn https:\/\/www.google.com 302
 
 # > Redirect HTTP to HTTPS
-^https?:\/\/(www.)?taobao\.com\/ https:\/\/www.taobao.com\/ 302
-^https?:\/\/(www.)?jd\.com\/ https:\/\/www.jd.com\/ 302
-^https?:\/\/(www.)?mi\.com\/ https:\/\/www.mi.com\/ 302
-^https?:\/\/you\.163\.com\/ https:\/\/you.163.com\/ 302
-^https?:\/\/(www.)?suning\.com\/ https:\/\/suning.com\/ 302
-^https?:\/\/(www.)?yhd\.com https:\/\/yhd.com\/ 302
 ^https?:\/\/aweme-eagle(.*)\.snssdk\.com\/aweme\/v2\/ https:\/\/aweme-eagle$1.snssdk.com\/aweme\/v1\/ 302
 ^https://(.*)\.snssdk\.com/aweme/v2/ https://$1.snssdk.com/aweme/v1/ 302
 
@@ -58,17 +52,6 @@
 ^https?:\/\/(www.)?yuanchengxiezuo\.com\/ https:\/\/www.teamviewer.com\/zhcn\/ 302
 ^https?:\/\/(www.)?zbrushcn\.com\/ http:\/\/pixologic.com\/ 302
 ^https?:\/\/aweme-eagle(.*)\.snssdk\.com\/aweme\/v2\/ https:\/\/aweme-eagle$1.snssdk.com\/aweme\/v1\/ 302
-
-# JD Protection
-^https?:\/\/coupon\.m\.jd\.com\/ https:\/\/coupon.m.jd.com\/ 302
-^https?:\/\/h5\.m\.jd\.com\/ https:\/\/h5.m.jd.com\/ 302
-^https?:\/\/item\.m\.jd\.com\/ https:\/\/item.m.jd.com\/ 302
-^https?:\/\/m\.jd\.com\/ https:\/\/m.jd.com\/ 302
-^https?:\/\/newcz\.m\.jd\.com\/ https:\/\/newcz.m.jd.com\/ 302
-^https?:\/\/p\.m\.jd\.com\/ https:\/\/p.m.jd.com\/ 302
-^https?:\/\/so\.m\.jd\.com\/ https:\/\/so.m.jd.com\/ 302
-^https?:\/\/union\.click\.jd\.com\/jda? http:\/\/union.click.jd.com\/jda?adblock= header
-^https?:\/\/union\.click\.jd\.com\/sem.php? http:\/\/union.click.jd.com\/sem.php?adblock= header
 
 # > Wiki
 ^https:\/\/zh.(m.)?wikipedia.org\/zh(-\w*)?(?=\/) https:\/\/www.wikiwand.com\/zh$2 302
@@ -314,7 +297,6 @@
 ^https?:\/\/qzonestyle.gtimg.cn\/qzone\/biz\/gdt\/mob\/sdk\/ios\/v2\/ - reject
 ^https?:\/\/cdn.kuaidi100.com\/images\/open\/appads - reject
 ^https?:\/\/p.kuaidi100.com\/mobile\/mainapi.do - reject
-
 
 # > 招商银行
 ^https?:\/\/pic1cdn.cmbchina.com\/appinitads\/ - reject
