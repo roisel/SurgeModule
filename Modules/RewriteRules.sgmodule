@@ -273,7 +273,7 @@
 ^https?:\/\/mapi.dangdang.com\/index.php\?action=init&user_client=iphone - reject
 
 # > 抖音
-^https?:\/\/.+\.amemv.com\/api\/ad\/ - reject
+#^https?:\/\/.+\.amemv.com\/api\/ad\/ - reject
 ^http?:\/\/v5-dy-hbxh.ixigua.com - reject
 ^https?:\/\/aweme.snssdk.com\/aweme\/v1\/aweme\/stats\/ - reject
 ^https?:\/\/aweme.snssdk.com\/aweme\/v1\/device\/update\/ - reject
@@ -287,7 +287,6 @@
 ^https?:\/\/sf\w-scmcdn-tos.pstatp.com\/goofy\/ad\/ - reject
 
 # > douyin landing_tertris_log
-^https?:\/\/api\w-normal-c-lf.amemv.com\/api\/apps\/ - reject
 ^https?:\/\/abtest-ch.snssdk.com\/common\?ecomterm_sdk_version - reject
 ^https?:\/\/log\w-misc-lf.amemv.com\/service\/\d{1}\/ - reject
 ^https?:\/\/sf\w-scmcdn-tos.pstatp.com\/goofy\/aweme\/ - reject
