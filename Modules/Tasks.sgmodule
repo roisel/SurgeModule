@@ -74,4 +74,4 @@ crazyJoy挂机 = type=cron,cronexp="10 1,12 * * *",wake-system=1,timeout=20,scri
 618动物联萌收集金币 = type=cron,cronexp="0-59/30 * * * *",wake-system=1,timeout=3600,script-path=Scripts/jd_zooCollect.js
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, bean.m.jd.com, wqsd.jd.com, home.m.jd.com, wq.jd.com, crazy-joy.jd.com, h5.m.jd.com
+hostname = %APPEND% m.jd.com, api.m.jd.com, bean.m.jd.com, wqsd.jd.com, home.m.jd.com, wq.jd.com, crazy-joy.jd.com, h5.m.jd.com
