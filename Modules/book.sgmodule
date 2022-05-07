@@ -1,0 +1,15 @@
+#!name=ReWriteRules
+#!desc=整合过的规则
+
+[URL Rewrite]
+
+^https?:\/\/*.myqcloud.com\/ - reject
+^https?:\/\/content-understand-strategy.sm.cn/open_screen_5s\/ - reject
+^https?:\/\/*.pglstatp-toutiao.com\/obj\/ad-pattern\/ - reject
+^http?:\/\/*.pglstatp-toutiao.com\/web.business.image - reject
+^http?:\/\/image.uczzd.cn\/ - reject
+^https?:\/\/api-access.pangolin-sdk-toutiao.com\/api\/ad\/ - reject
+^https?:\/\/pgdt.ugdtimg.com\/ - reject
+
+[MITM]
+hostname = %APPEND% *.myqcloud.com,content-understand-strategy.sm.cn,*.pglstatp-toutiao.com,image.uczzd.cn,api-access.pangolin-sdk-toutiao.com,pgdt.ugdtimg.com
