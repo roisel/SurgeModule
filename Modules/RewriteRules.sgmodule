@@ -59,6 +59,7 @@
 
 # Advertising Block
 
+
 # > Other
 ^https?:\/\/cnzz.com\/ http:\/\/ogtre5vp0.bkt.clouddn.com\/background.png? header
 ^https?:\/\/m.qu.la\/stylewap\/js\/wap.js http:\/\/ogtre5vp0.bkt.clouddn.com\/qu_la_wap.js 302
@@ -217,9 +218,14 @@
 ^https?:\/\/m.elecfans.com\/static\/js\/ad.js - reject
 ^https?:\/\/www1.elecfans.com\/www\/delivery\/ - reject
 
-# > 头条
+# > 头条\
+^https?:\/\/.+\.pstatp\.com\/wenda\/v2\/cdn\/answer\/detail\/ - reject
+^https?:\/\/.+\.toutiaoapi\.com\/toutiao\/bind_mobile_config\/ - reject
+^https?:\/\/.+\.toutiaoapi\.com\/toutiao\/bind_mobile_config\/ - reject
+^https?:\/\/.+\.toutiaoapi\.com\/service\/2\/device_register\/ - reject
+^https?:\/\/.+\.toutiaoapi\.com\/api\/ad\/ - reject
+^https?:\/\/.+\.toutiaoapi\.com\/search\/suggest\/ - reject
 ^https?:\/\/p\d.pstatp.com\/origin - reject
-^https?:\/\/pb\d.pstatp.com\/origin - reject
 ^https?:\/\/.+\.pstatp\.com\/img\/mosaic-legacy\/ - reject
 ^https?:\/\/.+\.pstatp\.com\/toutiao\/feoffine\/learing_core\/ - reject
 ^https?:\/\/.+\.pstatp.com\/img\/ad - reject
@@ -230,7 +236,6 @@
 ^https?:\/\/.+\.snssdk\.com\/activity\/carrier_flow\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/check_version\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/search\/suggest\/ - reject
-^https?:\/\/.+\.toutiaoapi\.com\/search\/suggest\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/api\/suggest_words\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/user\/profile\/bind_check\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/toutiao\/bind_mobile_config\/ - reject
