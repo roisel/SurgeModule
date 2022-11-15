@@ -219,6 +219,7 @@
 ^https?:\/\/www1.elecfans.com\/www\/delivery\/ - reject
 
 # > 头条
+^http:\/\/.+.toutiaovod.com\/ - reject
 ^http?:\/\/.+\.toutiaostatic.com\/obj\/toutiao-cdn\/webp-guide-open-notification-ios-dark.webp - reject
 ^https?:\/\/.+\.byteimg\.com\/web.business.image\/ - reject
 ^https?:\/\/.+\.byteimg\.com\/brand-ad-intranet\/ - reject
