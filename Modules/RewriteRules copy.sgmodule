@@ -1,0 +1,344 @@
+#!name=ReWriteRules
+#!desc=整合过的规则
+
+[URL Rewrite]
+
+# > Redirect Google Service
+^https?:\/\/(www.)?g\.cn https:\/\/www.google.com 302
+^https?:\/\/(www.)?google\.cn https:\/\/www.google.com 302
+
+# > Redirect HTTP to HTTPS
+^https?:\/\/aweme-eagle(.*)\.snssdk\.com\/aweme\/v2\/ https:\/\/aweme-eagle$1.snssdk.com\/aweme\/v1\/ 302
+^https://(.*)\.snssdk\.com/aweme/v2/ https://$1.snssdk.com/aweme/v1/ 302
+
+# Redirect False to True
+# > IGN China to IGN Global
+^https?:\/\/(www.)?ign\.xn--fiqs8s\/ http:\/\/cn.ign.com\/ccpref\/us 302
+
+# > Fake Website Made By Makeding
+^https?:\/\/(www.)?abbyychina\.com\/ http:\/\/www.abbyy.cn\/ 302
+^https?:\/\/(www.)?bartender\.cc\/ https:\/\/cn.seagullscientific.com 302
+^https?:\/\/(www.)?betterzip\.net\/ https:\/\/macitbetter.com\/ 302
+^https?:\/\/(www.)?beyondcompare\.cc\/ https:\/\/www.scootersoftware.com\/ 302
+^https?:\/\/(www.)?bingdianhuanyuan\.cn\/ http:\/\/www.faronics.com\/zh-hans\/ 302
+^https?:\/\/(www.)?chemdraw\.com\.cn\/ http:\/\/www.cambridgesoft.com\/ 302
+^https?:\/\/(www.)?codesoftchina\.com\/ https:\/\/www.teklynx.com\/ 302
+^https?:\/\/(www.)?coreldrawchina\.com\/ https:\/\/www.coreldraw.com\/cn\/ 302
+^https?:\/\/(www.)?crossoverchina\.com\/ https:\/\/www.codeweavers.com\/ 302
+^https?:\/\/(www.)?easyrecoverychina\.com\/ https:\/\/www.ontrack.com\/ 302
+^https?:\/\/(www.)?ediuschina\.com\/ https:\/\/www.grassvalley.com\/ 302
+^https?:\/\/(www.)?flstudiochina\.com\/ https:\/\/www.image-line.com\/flstudio\/ 302
+^https?:\/\/(www.)?formysql\.com\/ https:\/\/www.navicat.com.cn 302
+^https?:\/\/(www.)?guitarpro\.cc\/ https:\/\/www.guitar-pro.com\/ 302
+^https?:\/\/(www.)?huishenghuiying\.com\.cn\/ https:\/\/www.corel.com\/cn\/ 302
+^https?:\/\/(www.)?iconworkshop\.cn\/ https:\/\/www.axialis.com\/iconworkshop\/ 302
+^https?:\/\/(www.)?imindmap\.cc\/ https:\/\/imindmap.com\/zh-cn\/ 302
+^https?:\/\/(www.)?jihehuaban\.com\.cn\/ https:\/\/sketch.io\/ 302
+^https?:\/\/(www.)?keyshot\.cc\/ https:\/\/www.keyshot.com\/ 302
+^https?:\/\/(www.)?mathtype\.cn\/ http:\/\/www.dessci.com\/en\/products\/mathtype\/ 302
+^https?:\/\/(www.)?mindmanager\.cc\/ https:\/\/www.mindjet.com\/ 302
+^https?:\/\/(www.)?mindmapper\.cc\/ https:\/\/mindmapper.com 302
+^https?:\/\/(www.)?mycleanmymac\.com\/ https:\/\/macpaw.com\/cleanmymac 302
+^https?:\/\/(www.)?nicelabel\.cc\/ https:\/\/www.nicelabel.com\/ 302
+^https?:\/\/(www.)?ntfsformac\.cc\/ https:\/\/www.tuxera.com\/products\/tuxera-ntfs-for-mac-cn\/ 302
+^https?:\/\/(www.)?ntfsformac\.cn\/ https:\/\/www.paragon-software.com\/ufsdhome\/zh\/ntfs-mac\/ 302
+^https?:\/\/(www.)?overturechina\.com\/ https:\/\/sonicscores.com\/overture\/ 302
+^https?:\/\/(www.)?passwordrecovery\.cn\/ https:\/\/cn.elcomsoft.com\/aopr.html 302
+^https?:\/\/(www.)?pdfexpert\.cc\/ https:\/\/pdfexpert.com\/zh 302
+^https?:\/\/(www.)?ultraiso\.net\/ https:\/\/cn.ezbsystems.com\/ultraiso\/ 302
+^https?:\/\/(www.)?vegaschina\.cn\/ https:\/\/www.vegas.com\/ 302
+^https?:\/\/(www.)?xmindchina\.net\/ https:\/\/www.xmind.cn\/ 302
+^https?:\/\/(www.)?xshellcn\.com\/ https:\/\/www.netsarang.com\/products\/xsh_overview.html 302
+^https?:\/\/(www.)?yuanchengxiezuo\.com\/ https:\/\/www.teamviewer.com\/zhcn\/ 302
+^https?:\/\/(www.)?zbrushcn\.com\/ http:\/\/pixologic.com\/ 302
+^https?:\/\/aweme-eagle(.*)\.snssdk\.com\/aweme\/v2\/ https:\/\/aweme-eagle$1.snssdk.com\/aweme\/v1\/ 302
+
+# > Wiki
+^https:\/\/zh.(m.)?wikipedia.org\/zh(-\w*)?(?=\/) https:\/\/www.wikiwand.com\/zh$2 302
+^https:\/\/(\w*).(m.)?wikipedia.org\/wiki https:\/\/www.wikiwand.com\/$1 302
+
+# Advertising Block
+
+
+# > Other
+^https?:\/\/cnzz.com\/ http:\/\/ogtre5vp0.bkt.clouddn.com\/background.png? header
+^https?:\/\/m.qu.la\/stylewap\/js\/wap.js http:\/\/ogtre5vp0.bkt.clouddn.com\/qu_la_wap.js 302
+^https?:\/\/sqimg.qq.com\/ http:\/\/sqimg.qq.com\/ 302
+
+# > Anti_ISP_JavaScript_Injection
+^https?:\/\/c.minisplat.cn - reject
+^https?:\/\/c1.minisplat.cn - reject
+^https?:\/\/cache.changjingyi.cn - reject
+^https?:\/\/cache.gclick.cn - reject
+
+# > Anti_ISP_Safari_Baidu_CPM_Hijack
+^https?:\/\/m.coolaiy.com\/b.php - reject
+^https?:\/\/www.babyye.com\/b.php - reject
+^https?:\/\/www.gwv7.com\/b.php - reject
+^https?:\/\/www.likeji.net\/b.php - reject
+
+# > ChinaRailcom
+^https?:\/\/211.98.70.226:8080\/ - reject
+^https?:\/\/211.98.71.195:8080\/ - reject
+^https?:\/\/211.98.71.196:8080\/ - reject
+
+# > 腾讯
+^https?:\/\/.+.mp4\?cdncode=.+&sdtfrom=v3004 - reject
+^https?:\/\/.+\/hls.cache.p4p\/ - reject
+^https?:\/\/.+\/music\/common\/upload\/t_splash_info - reject
+^https?:\/\/.+\/omts.tc.qq.com\/ - reject
+^https?:\/\/.+\/tips\/fcgi-bin\/fcg_get_advert - reject
+^https?:\/\/.+\/variety.tc.qq.com\/ - reject
+^https?:\/\/.+\/vlive.qqvideo.tc.qq.com\/ - reject
+^https?:\/\/3gimg.qq.com\/tencentMapTouch\/app\/activity\/ - reject
+^https?:\/\/api5.futunn.com\/ad\/ - reject
+^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+?\.png - reject
+^https?:\/\/imgcache.qq.com\/qqlive\/ - reject
+^https?:\/\/lives.l.qq.com\/livemsg\?sdtfrom= - reject
+^https?:\/\/mmgr.gtimg.com\/gjsmall\/qiantu\/upload\/ - reject
+^https?:\/\/mp.weixin.qq.com\/mp\/(ad_complaint|ad_video|advertisement_report|getappmsgad|report) - reject
+^https?:\/\/mtteve.beacon.qq.com\/analytics - reject
+^https?:\/\/qt.qq.com\/lua\/mengyou\/get_splash_screen_info - reject
+^https?:\/\/r.inews.qq.com\/(adsBlacklist|getBannerAds|getFullScreenPic|getNewsRemoteConfig|getQQNewsRemoteConfig|searchHotCatList|upLoadLoc) - reject
+^https?:\/\/r.inews.qq.com\/getSplash\?apptype=ios&startarticleid=&__qnr= - reject
+^https?:\/\/splashqqlive.gtimg.com\/website\/\d{6} - reject
+^https?:\/\/ssl.kohsocialapp.qq.com:10001\/game\/buttons - reject
+^https?:\/\/szextshort.weixin.qq.com\/cgi-bin\/mmoc-bin\/ad\/ - reject
+^https?:\/\/vv.video.qq.com\/getvmind\? - reject
+^https?:\/\/y.gtimg.cn\/music\/common\/upload\/targeted_ads - reject
+
+# > 新浪
+^https?:\/\/api.weibo.cn\/2\/statuses\/extend\?gsid= - reject
+^https?:\/\/edit.sinaapp.com\/ua\?t=adv - reject
+^https?:\/\/free.sinaimg.cn\/u1.img.mobile.sina.cn - reject
+^https?:\/\/simg.s.weibo.com\/.+_ios\d{2}.gif - reject
+^https?:\/\/storage.wax.weibo.com\/\w+.(png|jpg|mp4) - reject
+^https?:\/\/u1.img.mobile.sina.cn\/public\/files\/image\/\d{3}x\d{2,4}.+(png|jpg|mp4) - reject
+
+# > 优酷
+^https?:\/\/(iyes|(api|hd).mobile).youku.com\/(adv|common\/v3\/hudong\/new) - reject
+^https?:\/\/.+.mp4\?ccode=0902 - reject
+^https?:\/\/.+.mp4\?sid= - reject
+^https?:\/\/ad.api.3g.youku.com - reject
+^https?:\/\/api.appsdk.soku.com\/(bg|tag)\/r - reject
+^https?:\/\/api.k.sohu.com\/api\/channel\/ad\/ - reject
+^https?:\/\/api.mobile.youku.com\/layout\/search\/hot\/word - reject
+^https?:\/\/m.youku.com\/video\/libs\/iwt.js - reject
+^https?:\/\/pic.k.sohu.com\/img8\/wb\/tj\/ - reject
+^https?:\/\/r.l.youku.com\/rec_at_click - reject
+^https?:\/\/r1.ykimg.com\/\w{30,35}.jpg - reject
+^https?:\/\/r1.ykimg.com\/material\/.+\/\d{3,4}-\d{4} - reject
+^https?:\/\/r1.ykimg.com\/material\/.+\/\d{6}\/\d{4}\/ - reject
+^https?:\/\/ups.youku.com\/(.*)needad=1& ^https?:\/\/ups.youku.com\/$1needad=0& 302
+^https?:\/\/vali.cp31.ott.cibntv.net\/youku - reject
+
+# > 网易
+^https?:\/\/.+.127.net\/ad - reject
+^https?:\/\/.+\/eapi\/(ad|evenet|log)\/ - reject
+^https?:\/\/c.m.163.com\/nc\/gl\/ - reject
+^https?:\/\/client.mail.163.com\/apptrack\/confinfo\/searchMultiAds - reject
+^https?:\/\/dsp-impr2.youdao.com\/adload.s\? - reject
+^https?:\/\/g1.163.com\/madfeedback - reject
+^https?:\/\/img1.126.net\/.+dpi=\w{7,8} - reject
+^https?:\/\/img1.126.net\/channel14\/ - reject
+^https?:\/\/interface.music.163.com\/eapi\/ad\/ - reject
+^https?:\/\/mimg.127.net\/external\/smartpop-manger.min.js - reject
+^https?:\/\/nex.163.com\/q - reject
+^https?:\/\/oimage([a-z])([0-9]).ydstatic.com\/.+?&product=adpublish - reject
+^https?:\/\/p[4](c)?.music.126.net\/\w+==\/10995\d{13}.jpg$ - reject
+^https?:\/\/sp.kaola.com\/api\/openad - reject
+^https?:\/\/support.you.163.com\/xhr\/boot\/getBootMedia.json - reject
+
+# > 爱奇艺
+^https?:\/\/.+\/cdn\/qiyiapp\/\d{8}\/.+&dis_dz= - reject
+^https?:\/\/.+\/cdn\/qiyiapp\/\d{8}\/.+&z=\w - reject
+^https?:\/\/.+\/videos\/other\/ - reject
+^https?:\/\/iface2.iqiyi.com\/fusion\/3.0\/fusion_switch - reject
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show.do - reject
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show - reject
+^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
+
+# > 百度
+(ps|sv|offnavi|newvector|ulog.imap|newloc)(.map)?.(baidu|n.shifen).com - reject
+^https?:\/\/afd.baidu.com\/afd\/entry - reject
+^https?:\/\/als.baidu.com\/clog\/clog - reject
+^https?:\/\/baichuan.baidu.com\/rs\/adpmobile\/launch - reject
+^https?:\/\/bj.bcebos.com\/fc-feed\/0\/pic\/ - reject
+^https?:\/\/c.tieba.baidu.com\/\w+\/\w+\/(sync|newRnSync|newlog|mlog) - reject
+^https?:\/\/c.tieba.baidu.com\/c\/p\/img\?src= - reject
+^https?:\/\/c.tieba.baidu.com\/c\/s\/logtogether\?cmd= - reject
+^https?:\/\/fcvbjbcebos.baidu.com\/.+.mp4 - reject
+^https?:\/\/gss0.bdstatic.com\/.+\/static\/wiseindex\/img\/bd_red_packet.png - reject
+^https?:\/\/issuecdn.baidupcs.com\/issue\/netdisk\/guanggao\/ - reject
+^https?:\/\/sm.domobcdn.com\/ugc\/\w\/ - reject
+^https?:\/\/tb1.bdstatic.com\/tb\/cms\/ngmis\/adsense\/*.jpg - reject
+^https?:\/\/tb2.bdstatic.com\/tb\/mobile\/spb\/widget\/jump - reject
+^https?:\/\/update.pan.baidu.com\/statistics - reject
+^https?:\/\/wapwenku.baidu.com\/view\/fengchao\/ - reject
+^https?:\/\/wapwenku.baidu.com\/view\/fengchaoTwojump\/ - reject
+^https?:\/\/wenku.baidu.com\/shifen\/ - reject
+
+# > 百度地图
+^https?:\/\/.+\/client\/phpui2\/ - reject
+
+# > 百度贴吧
+^https?:\/\/c.tieba.baidu.com\/c\/s\/splashSchedule - reject
+^https?:\/\/cover.baidu.com\/cover\/page\/dspSwitchAds\/ - reject
+
+# > 中国联通
+^https?:\/\/m.client.10010.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv) - reject
+^https?:\/\/m.client.10010.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd) - reject
+^https?:\/\/m1.ad.10010.com\/noticeMag\/images\/imageUpload\/2\d{3} - reject
+^https?:\/\/res.mall.10010.cn\/mall\/common\/js\/fa.js?referer= - reject
+
+# > 京东
+^https?:\/\/.+\/client?functionId=lauch\/lauchConfig&appName=paidaojia - reject
+^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
+^https?:\/\/m.360buyimg.com\/mobilecms\/s640x1136_jfs\/ - reject
+^https?:\/\/ms.jr.jd.com\/gw\/generic\/base\/na\/m\/adInfo - reject
+^https?:\/\/img12.360buyimg.com.+width=\d{4}&height=\d{4} - reject
+
+# > 淘宝
+^https?:\/\/gw.alicdn.com\/tfs\/.+-1125-1602 - reject
+
+# > 斗鱼
+^https?:\/\/capi\.douyucdn\.cn\/lapi\/sign\/app(api)?\/getinfo\?client_sys=ios - reject
+^https?:\/\/capi\.douyucdn\.cn\/api\/ios_app\/check_update - reject
+^https?:\/\/capi\.douyucdn\.cn\/api\/v1\/getStartSend?client_sys=ios - reject
+^https?:\/\/douyucdn\.cn\/.+?\/appapi\/getinfo - reject
+^https?:\/\/rtbapi.douyucdn.cn\/japi\/sign\/app\/getinfo - reject
+^https?:\/\/staticlive\.douyucdn\.cn\/.+?\/getStartSend - reject
+^https?:\/\/staticlive\.douyucdn\.cn\/upload\/signs\/ - reject
+
+# > 饿了么
+^https?:\/\/elemecdn.com\/.+\/sitemap - reject
+^https?:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4} - reject
+^https?:\/\/fuss10.elemecdn.com\/.+\/w\/750\/h\/\d{3,4} - reject
+^https?:\/\/fuss10.elemecdn.com\/.+.mp4 - reject
+^https?:\/\/m.elecfans.com\/static\/js\/ad.js - reject
+^https?:\/\/www1.elecfans.com\/www\/delivery\/ - reject
+
+# > 头条
+^http:\/\/.+.toutiaovod.com\/ - reject
+^http?:\/\/.+\.toutiaostatic.com\/obj\/toutiao-cdn\/webp-guide-open-notification-ios-dark.webp - reject
+^https?:\/\/.+\.byteimg\.com\/web.business.image\/ - reject
+^https?:\/\/.+\.byteimg\.com\/brand-ad-intranet\/ - reject
+^https?:\/\/.+\.pstatp\.com\/wenda\/v2\/cdn\/answer\/detail\/ - reject
+^https?:\/\/.+\.toutiaoapi\.com\/toutiao\/bind_mobile_config\/ - reject
+^https?:\/\/.+\.toutiaoapi\.com\/toutiao\/bind_mobile_config\/ - reject
+^https?:\/\/.+\.toutiaoapi\.com\/service\/2\/device_register\/ - reject
+^https?:\/\/.+\.toutiaoapi\.com\/api\/ad\/ - reject
+^https?:\/\/.+\.toutiaoapi\.com\/search\/suggest\/ - reject
+^https?:\/\/p\d.pstatp.com\/origin - reject
+^https?:\/\/.+\.pstatp\.com\/img\/mosaic-legacy\/ - reject
+^https?:\/\/.+\.pstatp\.com\/toutiao\/feoffine\/learing_core\/ - reject
+^https?:\/\/.+\.pstatp.com\/img\/ad - reject
+^https?:\/\/.+\.pstatp\.com\/obj\/web\.business\.image\/ - reject
+^https?:\/\/.+\.pstatp\.com\/img\/web\.business\.image\/ - reject
+^https?:\/\/.+\.snssdk.com\/api\/ad\/ - reject
+^https?:\/\/.+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ - reject
+^https?:\/\/.+\.snssdk\.com\/activity\/carrier_flow\/ - reject
+^https?:\/\/.+\.snssdk\.com\/check_version\/ - reject
+^https?:\/\/.+\.snssdk\.com\/search\/suggest\/ - reject
+^https?:\/\/.+\.snssdk\.com\/api\/suggest_words\/ - reject
+^https?:\/\/.+\.snssdk\.com\/user\/profile\/bind_check\/ - reject
+^https?:\/\/.+\.snssdk\.com\/toutiao\/bind_mobile_config\/ - reject
+^https?:\/\/.+\.snssdk.com\/v2\/ - reject
+^https?:\/\/.+\.snssdk.com\/meteor.js\/ - reject
+^https?:\/\/.+\.snssdk.com\/2\/wap\/landing_tertris_log\/ - reject
+^https?:\/\/aweme.snssdk.com\/aweme\/v1\/aweme\/stats\/ - reject
+^https?:\/\/aweme.snssdk.com\/aweme\/v1\/device\/update\/ - reject
+^https?:\/\/aweme.snssdk.com\/aweme\/v1\/screen\/ad\/ - reject
+^https?:\/\/aweme.snssdk.com\/service\/1\/app_logout\/ - reject
+^https?:\/\/.+\.snssdk.com\/service\/2\/app_log - reject
+^https?:\/\/frontier.snssdk.com\/ - reject
+^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ - reject
+
+# > 咸鱼
+^https?:\/\/gw.alicdn.com\/mt\/ - reject
+^https?:\/\/gw.alicdn.com\/tfs\/.+\d{3,4}-\d{4} - reject
+^https?:\/\/gw.alicdn.com\/tps\/.+\d{3,4}-\d{4} - reject
+
+# > 掌阅
+^https?:\/\/book.img.ireader.com\/group6\/M00 - reject
+
+# > 肯德基
+^https?:\/\/res.kfc.com.cn\/advertisement\/ - reject
+
+# > 美团
+^https?:\/\/img.meituan.net\/midas\/ - reject
+^https?:\/\/p\d.meituan.net\/(mmc|wmbanner)\/ - reject
+
+# > QQ Pim
+^https?:\/\/mmgr.gtimg.com\/gjsmall\/qqpim\/public\/ios\/splash\/.+\/\d{4}_\d{4} - reject
+
+# > 汽车之家
+^https?:\/\/adproxy.autohome.com.cn\/AdvertiseService\/ - reject
+^https?:\/\/app2.autoimg.cn\/appdfs\/ - reject
+
+# > 当当
+^https?:\/\/img\d{2}.ddimg.cn\/upload_img\/.+\/670x900 - reject
+^https?:\/\/img\d{2}.ddimg.cn\/upload_img\/.+\/750x1064 - reject
+^https?:\/\/mapi.dangdang.com\/index.php\?action=init&user_client=iphone - reject
+
+# > 抖音
+^http?:\/\/v5-dy-hbxh.ixigua.com - reject
+^https?:\/\/aweme.snssdk.com\/aweme\/v1\/aweme\/stats\/ - reject
+^https?:\/\/aweme.snssdk.com\/aweme\/v1\/device\/update\/ - reject
+^https?:\/\/aweme.snssdk.com\/aweme\/v1\/screen\/ad\/ - reject
+^https?:\/\/aweme.snssdk.com\/service\/1\/app_logout\/ - reject
+^https?:\/\/aweme.snssdk.com\/service\/2\/app_log - reject
+^https?:\/\/frontier.snssdk.com\/ - reject
+^https?:\/\/sf\w-ttcdn-tos.pstatp.com\/obj\/web.business.image\/ - reject
+^https?:\/\/sf\w-be-pack.pglstatp-toutiao.com\/obj\/ad-app-package\/ - reject
+^https?:\/\/s\w.pstatp.com\/bytecom\/ - reject
+^https?:\/\/sf\w-scmcdn-tos.pstatp.com\/goofy\/ad\/ - reject
+
+# > douyin landing_tertris_log
+^https?:\/\/abtest-ch.snssdk.com\/common\?ecomterm_sdk_version - reject
+^https?:\/\/sf\w-scmcdn-tos.pstatp.com\/goofy\/aweme\/ - reject
+^https?:\/\/aweme.snssdk.com\/falcon\/rn\/business\/ - reject
+
+# > 快递100
+^https?:\/\/qzonestyle.gtimg.cn\/qzone\/biz\/gdt\/mob\/sdk\/ios\/v2\/ - reject
+^https?:\/\/cdn.kuaidi100.com\/images\/open\/appads - reject
+^https?:\/\/p.kuaidi100.com\/mobile\/mainapi.do - reject
+
+# > 招商银行
+^https?:\/\/pic1cdn.cmbchina.com\/appinitads\/ - reject
+
+# > Cmblife
+^https?:\/\/mlife.cmbchina.com\/ClientFace(Service)?\/getAdvertisement.json - reject
+^https?:\/\/mlife.cmbchina.com\/ClientFace(Service)?\/preCacheAdvertise.json - reject
+^https?:\/\/resource.cmbchina.com\/fsp\/File\/ClientFacePublic\/.+.gif - reject
+
+# > 91Porn
+^https?:\/\/192.133.+.mp4$ - reject
+
+# > 什么值得买
+^https?:\/\/api.smzdm.com\/v1\/util\/loading - reject
+^https?:\/\/api.smzdm.com\/v2\/util\/banner - reject
+
+# > 动卡空间
+^https?:\/\/m.creditcard.ecitic.com\/citiccard\/mbk\/.+.\/appStartAdv - reject
+
+# > 顺丰蜂巢
+^https?:\/\/consumer.fcbox.com\/v1\/ad\/OpeningAdInfo\/ - reject
+
+# > 威锋
+^https?:\/\/api.feng.com[\s\S]*?Claunch_screen - reject
+^https?:\/\/fengplus.feng.com\/index.php\?r=api\/slide\/.+Ads - reject
+
+# > 高德
+^https?:\/\/m\d{1}\.amap.com\/ws\/valueadded\/ - reject
+
+# > Other
+^https?:\/\/.+nga.cn.+\bhome.+\b=ad - reject
+^https?:\/\/.+resource=article\/recommend\&accessToken= - reject
+^https?:\/\/113.200.76.*:16420\/sxtd.bike2.01\/getkey.do - reject
+^https?:\/\/counter.ksosoft.com\/ad.php - reject
+^https?:\/\/btrace.qq.com - reject
+^https?:\/\/.+\.kingsoft-office-service\.com\/ad - reject
+
+[MITM]
+hostname = %APPEND% *.toutiaoapi.com, *.snssdk.com, *.toutiaoimg.com, *.toutiaostatic.com, *.zijieapi.com, *.ecombdapi.com,  *.byteoofy.com, *.bdurl.net, *.miaozhen.com, *.baike.com, *.bytedance.com,*.douyin.com,  *.pstatp.com, *.k.sohu.com, *.kfc.com, *.kingsoft-office-service.com, *.meituan.net, *.wikipedia.org, *.wikiwand.com, *.ydstatic.com, *.youdao.com, acs.m.taobao.com, act.vip.iqiyi.com, adproxy.autohome.com.cn, afd.baidu.com, api.feng.com, api.k.sohu.com, api.smzdm.com, api5.futunn.com, app2.autoimg.cn, appsdk.soku.com, c.m.163.com, capi.douyucdn.cn, cdn.kuaidi100.com,  client.mail.163.com, consumer.fcbox.com, creditcard.ecitic.com, dsp-impr2.youdao.com, *.dangdang.com, fuss10.elemecdn.com,gorgon.youdao.com, gw.alicdn.com, iface.iqiyi.com, iface2.iqiyi.com, img1.126.net, impservice.dictapp.youdao.com, interface.music.163.com, ios.wps.cn,   lives.l.qq.com, m*.amap.com, m.client.10010.com,m.creditcard.ecitic.com,  m5.amap.com, mi.gdt.qq.com, mimg.127.net, mp.weixin.qq.com, ms.jr.jd.com, newsso.map.qq.com, nex.163.com, p.kuaidi100.com, p1.music.126.net, pic.k.sohu.com, pic1cdn.cmbchina.com, r.inews.qq.com, render.alipay.com, resource.cmbchina.com, rtbapi.douyucdn.cn,  staticlive.douyucdn.cn, support.you.163.com,  ups.youku.com, wapwenku.baidu.com, wenku.baidu.com, zhidao.baidu.com
